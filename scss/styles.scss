@@ -1,0 +1,65 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@mixin musicNote {
+    height: 150px;
+    width: 50px;
+    font-size: 25px;
+    margin: 2px;
+    color: white;
+}
+@mixin musicNoteBorder($color) {
+    border: 2px solid $color;
+}
+@mixin musicNoteBackground($color) {
+    background-color: $color;
+    opacity: 0.5;
+}
+
+body {
+    background-color: black;
+}
+.button-row {
+    @include flexCenter;
+}
+.note {
+    @include musicNote;
+}
+#c {
+    @extend .note;
+    @include musicNoteBorder(red);
+    @include musicNoteBackground(red);
+}
+#d {
+    @extend .note;
+    @include musicNoteBorder(orange);
+    @include musicNoteBackground(orange);
+}
+#e {
+    @extend .note;
+    @include musicNoteBorder(yellow);
+    @include musicNoteBackground(yellow);
+}
+#f {
+    @extend .note;
+    @include musicNoteBorder(green);
+    @include musicNoteBackground(green);
+}
+#g {
+    @extend .note;
+    @include musicNoteBorder(blue);
+    @include musicNoteBackground(blue);
+}
+#a {
+    @extend .note;
+    @include musicNoteBorder(purple);
+    @include musicNoteBackground(purple);
+}
+#b {
+    @extend .note;
+    @include musicNoteBorder(pink);
+    @include musicNoteBackground(pink);
+} 

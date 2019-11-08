@@ -1,0 +1,1 @@
+Music Box Application built using vanilla JS, HTML, CSS/SASS. On the screen are 7 buttons and when pressed they will play an audio recording of the sound corresponding to the button text.
