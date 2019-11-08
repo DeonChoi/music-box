@@ -10,41 +10,61 @@ body {
 .note, #c, #d, #e, #f, #g, #a, #b {
   height: 150px;
   width: 50px;
-  font-size: 25px;
+  font-size: 26px;
   margin: 2px;
-  color: white; }
+  color: black; }
+
+.note:focus, #c:focus, #d:focus, #e:focus, #f:focus, #g:focus, #a:focus, #b:focus {
+  outline: 0; }
+
+.note:active, #c:active, #d:active, #e:active, #f:active, #g:active, #a:active, #b:active {
+  transform: translateY(3px); }
 
 #c {
-  border: 2px solid red;
-  background-color: red;
-  opacity: 0.5; }
+  border: 1px solid red;
+  box-shadow: 0 0 1px 1px red;
+  text-shadow: 0 0 3px white;
+  background-color: #422424;
+  opacity: 1; }
 
 #d {
-  border: 2px solid orange;
-  background-color: orange;
-  opacity: 0.5; }
+  border: 1px solid orange;
+  box-shadow: 0 0 1px 1px orange;
+  text-shadow: 0 0 3px white;
+  background-color: #423824;
+  opacity: 1; }
 
 #e {
-  border: 2px solid yellow;
-  background-color: yellow;
-  opacity: 0.5; }
+  border: 1px solid yellow;
+  box-shadow: 0 0 1px 1px yellow;
+  text-shadow: 0 0 3px white;
+  background-color: #424224;
+  opacity: 1; }
 
 #f {
-  border: 2px solid green;
-  background-color: green;
-  opacity: 0.5; }
+  border: 1px solid green;
+  box-shadow: 0 0 1px 1px green;
+  text-shadow: 0 0 3px white;
+  background-color: #244224;
+  opacity: 1; }
 
 #g {
-  border: 2px solid blue;
-  background-color: blue;
-  opacity: 0.5; }
+  border: 1px solid blue;
+  box-shadow: 0 0 1px 1px blue;
+  text-shadow: 0 0 3px white;
+  background-color: #242442;
+  opacity: 1; }
 
 #a {
-  border: 2px solid purple;
-  background-color: purple;
-  opacity: 0.5; }
+  border: 1px solid purple;
+  box-shadow: 0 0 1px 1px purple;
+  text-shadow: 0 0 3px white;
+  background-color: #422442;
+  opacity: 1; }
 
 #b {
-  border: 2px solid pink;
-  background-color: pink;
-  opacity: 0.5; }
+  border: 1px solid pink;
+  box-shadow: 0 0 1px 1px pink;
+  text-shadow: 0 0 3px white;
+  background-color: #422429;
+  opacity: 1; }

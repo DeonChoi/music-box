@@ -7,16 +7,18 @@
 @mixin musicNote {
     height: 150px;
     width: 50px;
-    font-size: 25px;
+    font-size: 26px;
     margin: 2px;
-    color: white;
+    color: black;
 }
 @mixin musicNoteBorder($color) {
-    border: 2px solid $color;
+    border: 1px solid $color;
+    box-shadow: 0 0 1px 1px $color;
+    text-shadow: 0 0 3px white;
 }
 @mixin musicNoteBackground($color) {
     background-color: $color;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 body {
@@ -28,38 +30,44 @@ body {
 .note {
     @include musicNote;
 }
+.note:focus {
+    outline: 0;
+}
+.note:active {
+    transform: translateY(3px);
+}
 #c {
     @extend .note;
     @include musicNoteBorder(red);
-    @include musicNoteBackground(red);
+    @include musicNoteBackground(hsl(0, 30%, 20%));
 }
 #d {
     @extend .note;
     @include musicNoteBorder(orange);
-    @include musicNoteBackground(orange);
+    @include musicNoteBackground(hsl(39, 30%, 20%));
 }
 #e {
     @extend .note;
     @include musicNoteBorder(yellow);
-    @include musicNoteBackground(yellow);
+    @include musicNoteBackground(hsl(60, 30%, 20%));
 }
 #f {
     @extend .note;
     @include musicNoteBorder(green);
-    @include musicNoteBackground(green);
+    @include musicNoteBackground(hsl(120, 30%, 20%));
 }
 #g {
     @extend .note;
     @include musicNoteBorder(blue);
-    @include musicNoteBackground(blue);
+    @include musicNoteBackground(hsl(240, 30%, 20%));
 }
 #a {
     @extend .note;
     @include musicNoteBorder(purple);
-    @include musicNoteBackground(purple);
+    @include musicNoteBackground(hsl(300, 30%, 20%));
 }
 #b {
     @extend .note;
     @include musicNoteBorder(pink);
-    @include musicNoteBackground(pink);
+    @include musicNoteBackground(hsl(350, 30%, 20%));
 } 
